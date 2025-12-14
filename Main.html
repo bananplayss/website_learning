@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menooo</title>
-    <p>szinten menooo</p>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <style>
+      .btn {
+        position: absolute;
+        background-color: transparent;
+        width: 200px;
+        height: 100px;
+        display: grid;
+        place-items: center;
+        padding: 0px;
+        border-radius: 30px;
+        border: solid blue;
+        border-left-width: 4;
+        border-width: 4px;
+        margin-top: 300px;
+        margin-left: 600px;
+        cursor: pointer;
+        transition: border-left-width 2s;
+      }
+      h2 {
+        position: absolute;
+        z-index: 1;
+        transform: translate(645px, 295px);
+        cursor: pointer;
+        font-size: 40px;
+      }
+      button:hover {
+        border-left-width: 200px;
+        padding: 0px;
+      }
+    </style>
+    <div>
+      <h2 onclick="message()">WOW</h2>
+      <button class="btn" onclick="message()"></button>
+    </div>
+    <script>
+      function message() {
+        alert("Hát ez...");
+      }
+    </script>
+  </body>
 </html>
